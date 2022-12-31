@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planet Project</title>
+    <style>
+        body{
+            background-color: #363640;
+            height: 100vh;
+        }
+        .container{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            height: 100%;
+            border: solid 1px red;
+            gap: 15px;
+        }
+        .sol{
+            background-color: #F2BC46;
+            width: 190px;
+            height: 200px;
+            border-radius: 50%;
+        }
+        .mercurio{
+            background-color:#76777A;;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .venus{
+            background-color:#D1734B;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .terra{
+            background-color:#496282;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            position: relative;
+        }
+        .terra::before{
+   content: "";
+    background-color: #5E8249;
+    width: 19px;
+    position: absolute;
+    border-radius: 50%;
+    padding: 9px;
+    bottom: 10px;
+    right: 19px;
+    /* transform: rotateY(-0.25turn);
+        } */
+        transform: rotate(64deg);
+    }
+    .terra::after{
+   content: "";
+    background-color: #5E8249;
+    width: 3px;
+    position: absolute;
+    border-radius: 50%;
+    padding: 5px;
+    top: 3px;
+    right: 10px;
+    /* transform: rotateY(-0.25turn);
+        } */
+        transform: rotate(60deg);
+    }
+    .marte{
+            background-color:#c25447;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            position: relative;
+        }
+        .marte::before{
+   content: "";
+    background-color: #a14135;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    top: 12px;
+    left: 5px;
+    /* transform: rotateY(-0.25turn);
+        } */
+        transform: rotate(64deg);
+    }
+    .marte::after{
+   content: "";
+    background-color: #a14135;
+    width: 3px;
+    position: absolute;
+    border-radius: 50%;
+    padding: 5px;
+    top: 3px;
+    right: 10px;
+    /* transform: rotateY(-0.25turn);
+        } */
+        transform: rotate(60deg);
+    }
+
+
+    .terra2{
+            background-color:#496282;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            position: relative;
+            border-top: solid 1px red;
+            transition: transform 4s;
+        }
+        .terra2:hover{
+            transform: rotateY(180deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sol"></div>
+        <div class="mercurio"></div>
+        <div class="venus"></div>
+        <div class="terra"> </div>
+        <div class="terra2">sss </div>
+        <div class="marte"> </div>
+        <div class="jupiter"></div>
+        <div class="saturno"></div>
+        <div class="urano"></div>
+        <div class="netuno"></div>
+        <div class="plutao"></div>
+    </div>
+    
+</body>
+</html>
